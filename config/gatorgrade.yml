@@ -1,0 +1,71 @@
+# Checks for the Lab 05 project
+- writing/reflection.md:
+    - description: Ensure the reflection file exists.
+      check: ConfirmFileExists
+    - description: To-do's in reflection.md - Answer all reflection questions.
+      check: MatchFileFragment
+      options:
+        fragment: TODO
+        count: 0
+        exact: true
+    - description: Add name to reflection.md document.
+      check: MatchFileFragment
+      options:
+        fragment: "Add Your Name Here"
+        count: 0
+        exact: true
+
+- src/space_invaders/main.py:
+    - description: To-do's in main.py - Ensure the application entry point exists.
+      check: ConfirmFileExists
+    - description: Complete the entry-point import.
+      check: MatchFileFragment
+      options:
+        fragment: TODO
+        count: 0
+        exact: true
+
+- src/space_invaders/game.py:
+    - description: To-do's in game.py - Complete the game module.
+      check: MatchFileFragment
+      options:
+        fragment: TODO
+        count: 0
+        exact: true
+
+- src/space_invaders/player.py:
+    - description: To-do's in player.py - Complete player imports and behavior.
+      check: MatchFileFragment
+      options:
+        fragment: TODO
+        count: 0
+        exact: true
+
+- src/space_invaders/enemy.py:
+    - description: To-do's in enemy.py - Complete the invader class.
+      check: MatchFileFragment
+      options:
+        fragment: TODO
+        count: 0
+        exact: true
+
+- src/space_invaders/projectile.py:
+    - description: To-do's in projectile.py - Complete projectile movement.
+      check: MatchFileFragment
+      options:
+        fragment: TODO
+        count: 0
+        exact: true
+
+- src/space_invaders/background.py:
+    - description: To-do's in background.py - Complete the starfield module.
+      check: MatchFileFragment
+      options:
+        fragment: TODO
+        count: 0
+        exact: true
+
+- description: Make regular progress with at least five commits.
+  check: CountCommits
+  options:
+    count: 5
